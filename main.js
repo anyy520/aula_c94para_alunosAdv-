@@ -21,7 +21,7 @@ function player_update()
 	player_object.set({top:player_y,left:player_x});
 	canvas.add(player_object);
 	});
-
+}
 function new_image(get_image)
 {
 	fabric.Image.fromURL(get_image, function(Img) {
@@ -46,7 +46,7 @@ function my_keydown(e)
 
 keyPressed = e.keyCode;
 console.log(keyPressed);
-
+	
 if(e.shiftKey == true && keyPressed == '67')
 {
 	console.log("C e Shift pressionadas ao mesmo tempo");
